@@ -1,0 +1,30 @@
+{
+    "name": "Download sources",
+    "description": "自动下载dasiyingyu的图片和音频",
+    "version": "1.2",
+    "author": "<Shaobo Hao> | rainer800@163.com",
+    "minimum_chrome_version": "16.0.884",
+    "permissions": [
+        "downloads",
+        "storage",
+        "<all_urls>"
+    ],
+    "icons": {
+      "48": "icon_48.jpg",
+      "128": "icon_128.jpg"
+    },
+    "background": {
+      "persistent": false,
+      "scripts": ["background.js"]
+    },
+    "browser_action": {
+      "default_icon": "icon_16.jpg",
+      "default_title": "Merge Windows"
+    },
+    "content_scripts": [ {
+       "all_frames": true,
+       "js": [ "observeSource.js" ],
+       "matches": [ "\u003Call_urls>" ]
+    } ],
+    "manifest_version": 2
+}
