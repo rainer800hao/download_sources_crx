@@ -1,7 +1,7 @@
 {
     "name": "Download sources",
     "description": "自动下载dasiyingyu的图片和音频",
-    "version": "1.2",
+    "version": "1.2.1",
     "author": "<Shaobo Hao> | rainer800@163.com",
     "minimum_chrome_version": "16.0.884",
     "permissions": [

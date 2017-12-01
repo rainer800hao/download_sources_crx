@@ -87,4 +87,4 @@ var config = {subtree: true, childList: true}
 // 传入目标节点和观察选项
 target && observer.observe(target, config);
 // 主动下载第一个音频
-filterSource(document.querySelector('#audio', soundEl).src);
+document.querySelector('#audio') && filterSource(document.querySelector('#audio', soundEl).src);
